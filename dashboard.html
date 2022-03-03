@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- icon for favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/icon_Favicon_Zipang.png" />
+
+    <!-- link ke css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- tes2 -->
+    <!-- <div class="navigation fixed-bottom d-block d-sm-block d-md-none">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-speedometer "></i>
+                    </span>
+                    <span class="text ">Dashboard</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="invoices.html">
+                    <span class="icon">
+                        <i class="bi bi-receipt "></i>
+                    </span>
+                    <span class="text">Invoice</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-plus-circle  "></i>
+                    </span>
+                    <span class="text">Reports</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-person "></i>
+                    </span>
+                    <span class="text">Agents</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-box-arrow-right  "></i>
+                    </span>
+                    <span class="text">Signout</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div> -->
+
+    <div class="container-nav-mobile text-center fixed-bottom d-block d-sm-block d-md-none">
+        <div class="navbar-mobile" id="navbar-mobile">
+            <li>
+                <a href="dashboard.html" class="">
+                    <i class="bi bi-speedometer fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="invoices.html" class="">
+                    <i class="bi bi-receipt fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Slip Index</div>
+                </a>
+            </li>
+            <li>
+                <a href="import.html" class="">
+                    <i class="bi bi-plus-circle-fill fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Report</div>
+                </a>
+            </li>
+            <li>
+                <a href="agents.html" class="">
+                    <i class="bi bi-person-fill fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Agents</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="" data-bs-toggle="modal" data-bs-target="#signout">
+                    <i class="bi bi-box-arrow-right fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Signout</div>
+                </a>
+            </li>
+        </div>
+    </div>
+
+    <!-- tes -->
+    <!-- <nav class="navbar navbar-expand mobile-navbar fixed-bottom d-block d-sm-block d-md-none">
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item active">
+                <a href="dashboard.html" class="d-flex justify-content-around ">
+                    <i class="bi bi-speedometer fs-3"></i>
+                    <i class="bi bi-speedometer fs-3  activeIcon"></i>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="invoices.html" class="d-flex justify-content-around">
+                    <i class="bi bi-receipt fs-3"></i>
+                    <i class="bi bi-receipt fs-3 activeIcon"></i>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="import.html" class="d-flex justify-content-around">
+                    <i class="bi bi-plus-circle fs-3 "></i>
+                    <i class="bi bi-plus-circle-fill fs-3  activeIcon"></i>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="agents.html" class="d-flex justify-content-around">
+                    <i class="bi bi-person fs-3"></i>
+                    <i class="bi bi-person-fill fs-3  activeIcon"></i>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="" class="d-flex justify-content-around" data-bs-toggle="modal" data-bs-target="#signout">
+                    <i class="bi bi-box-arrow-right fs-3 "></i>
+                </a>
+            </li>
+        </ul>
+    </nav> -->
+
+    <!-- sticky navbar bottom -->
+    <!-- <nav class="navbar navbar-expand top-navbar fixed-bottom d-block d-sm-block d-md-none">
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item ">
+                <a href="dashboard.html" class="nav-link"><i class="bi bi-speedometer2 fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="invoices.html" class="nav-link"><i class="bi bi-receipt fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="import.html" class="nav-link"><i class="bi bi-plus-circle fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="agents.html" class="nav-link"><i class="bi bi-person fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#signout"><i
+                        class="bi bi-box-arrow-right fs-3 text-white"></i></a>
+            </li>
+        </ul>
+    </nav> -->
+    <!-- navbar bottom -->
+
+
+    <!-- wrapper -->
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="sidenav" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center bg-white">
+                <!-- <a href="dashboard.html">
+                    Zipang
+                </a> -->
+                <!-- <a href="dashboard.html" class="text-white fs-4 fw-bold text-uppercase">
+                    Zipang</a> -->
+                <a href="dashboard.html" class="">
+                    <img class="resizeIcon" src="assets/img/nav_icon_zipang.png" alt="Zipang">
+                </a>
+
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text btn active"><i
+                        class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                <a href="invoices.html" class="list-group-item list-group-item-action bg-transparent second-text "><i
+                        class="bi bi-receipt me-2"></i>Invoices</a>
+                <a href="import.html" class="list-group-item list-group-item-action bg-transparent second-text "><i
+                        class="bi bi-plus-circle me-2"></i>Reports</a>
+                <a href="agents.html" class="list-group-item list-group-item-action bg-transparent second-text "><i
+                        class="bi bi-person-fill me-2"></i>Agents</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text "
+                    data-bs-toggle="modal" data-bs-target="#signout"><i class="bi bi-box-arrow-right me-2"></i>Sign
+                    out</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg px-4 navbar-large costume-bug-link">
+                <div class=" d-none d-md-block d-lg-block">
+                    <i class="bi bi-text-left fs-2 me-3 " id="menu-toggle"></i>
+                </div>
+                <div class=" d-none d-md-block d-lg-block">
+                    <a href="#">Home</a>
+                </div>
+                <div class=" d-block d-sm-block d-md-none">
+                    <!-- <a href="dashboard.html" class="">
+                        <img width="135" src="assets/img/nav_icon_zipang.png" alt="Zipang">
+                    </a> -->
+                    <a href="#" class="text-white fw-bold fs-2 text-uppercase">Zipang</a>
+                </div>
+
+                <button class="navbar-toggler collapsed ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon top-bar"></span>
+                    <span class="navbar-toggler-icon middle-bar"></span>
+                    <span class="navbar-toggler-icon bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-center" href="profile.html">
+                                <i class="bi bi-person-circle fs-5 me-2"></i>
+                                wahdania.prasetyo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4 mt-3 topdown-padding">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="my-2">Dashboard</h4>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div class="small-box primary-bg">
+                            <div class="inner">
+                                <h3 class="fw-bold">50</h3>
+                                <p>Tasks</p>
+                            </div>
+                            <div class="icon">
+                                <i class="bi bi-list-task fs-1"></i></i>
+                            </div>
+                            <a href="agents.html" class="small-box-footer">
+                                More info
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="small-box primary-bg">
+                            <div class="inner">
+                                <h3 class="fw-bold">8</h3>
+                                <p>Paid Tasks</p>
+                            </div>
+                            <div class="icon">
+                                <i class="bi bi-minecart fs-1"></i></i>
+                            </div>
+                            <a href="agents.html" class="small-box-footer">
+                                More info
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="small-box primary-bg">
+                            <div class="inner">
+                                <h3 class="fw-bold">50.23</h3>
+                                <p>Your Balance</p>
+                            </div>
+                            <div class="icon">
+                                <i class="bi bi-currency-euro fs-1"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">
+                                Withdraw
+                                <i class="bi bi-arrow-right-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-card-dashboard">
+                    <div class="row d-flex justify-content-md-center">
+                        <div class="col-lg-4 col-md-12 col-12 mb-4 ">
+                            <div class="card1">
+                                <div class="col-md-3 col-3 left-column background1-left-column text-center text-white">
+                                    <!-- <h5 class="fw-bold">Agents Task</h5> -->
+                                    <i class="bi bi-list-task icon-card-dashboard"></i>
+                                </div>
+                                <div class="col-md-9 col-9 right-column">
+                                    <div>
+                                        <h6 class="text-muted">Agents Tasks</h6>
+                                    </div>
+                                    <h2 class="text-center fw-bold">50</h2>
+                                    <button class="button-more background1-left-column">More info <i
+                                            class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12 mb-4">
+                            <div class="card1">
+                                <div class="col-md-3 col-3 left-column background2-left-column text-center text-white">
+                                    <!-- <h5 class="fw-bold">Total Paid Task</h5> -->
+                                    <i class="bi bi-wallet icon-card-dashboard"></i>
+                                </div>
+                                <div class="col-md-9 col-9 right-column">
+                                    <div>
+                                        <h6 class="text-muted">Total Paid Tasks</h6>
+                                    </div>
+                                    <h2 class="text-center fw-bold">8</h2>
+                                    <button class="button-more background2-left-column">More info <i
+                                            class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12 mb-4 ">
+                            <div class="card1">
+                                <div class="col-md-3 col-3 left-column background3-left-column text-center text-white">
+                                    <!-- <h5 class="fw-bold">Total Paid Task</h5> -->
+                                    <i class="bi bi-currency-euro icon-card-dashboard"></i>
+                                </div>
+                                <div class="col-md-9 col-9 right-column">
+                                    <div>
+                                        <h6 class="text-muted">Total Cost</h6>
+                                    </div>
+                                    <h2 class="text-center fw-bold">50.22</h2>
+                                    <button class="button-more background3-left-column">Withdraw <i
+                                            class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- latest invoice -->
+                <div class="container-bg my-2">
+                    <div class="row ">
+                        <h4 class="fs-5 mb-2">Latest Invoice</h4>
+                        <div class="col-lg-12 col-md-12 col-12  table-responsive">
+                            <table class="table bg-white rounded shadow-sm  table-hover ">
+                                <thead>
+                                    <tr class="text-white">
+                                        <th scope="col">Date</th>
+                                        <th scope="col" class="text-center">Total</th>
+                                        <th scope="col" class="text-center">Detail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td>2021-09-28 20:33:42 UTC</td>
+                                        <td class="text-center">2.14</td>
+                                        <td class="text-center"><a href="showInvoices.html"><i
+                                                    class="bi bi-eye-fill fs-5 text-dark"></i></a></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>2021-09-28 20:33:42 UTC</td>
+                                        <td class="text-center">2.14</td>
+                                        <td class="text-center"><a href="showInvoices.html"><i
+                                                    class="bi bi-eye-fill fs-5 text-dark"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end latest invoice -->
+
+
+                <!-- Task List -->
+                <div class="container-bg my-4">
+                    <div class="row">
+                        <h4 class="fs-5 mb-2">Task List</h4>
+                        <div class="col-lg-12 col-md-12 col-12  table-responsive">
+                            <table class="table bg-white rounded shadow-sm  table-hover ">
+                                <thead>
+                                    <tr class="text-white">
+                                        <th scope="col">Date</th>
+                                        <th scope="col" class="text-center">Status</th>
+                                        <th scope="col" class="text-center">Alerts Count</th>
+                                        <th scope="col" class="text-center">Hour Worked</th>
+                                        <th scope="col" class="text-center">Honorarium</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td>2021-09-16</td>
+                                        <td class="text-center">Paid</td>
+                                        <td class="text-center">566</td>
+                                        <td class="text-center">3</td>
+                                        <td class="text-center">2.14 €</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>2021-09-16</td>
+                                        <td class="text-center">Paid</td>
+                                        <td class="text-center">566</td>
+                                        <td class="text-center">3</td>
+                                        <td class="text-center">2.14 €</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end task list -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <div class="ngakalin d-block d-sm-block d-md-none">
+        <br><br><br>
+    </div> -->
+
+    <!-- Modal signout -->
+    <div class="modal fade" id="signout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-body p-4 text-center">
+                    <h5 class="mb-0">Ingin Keluar Cyin~?</h5>
+                    <!-- <p class="mb-0">You can always change your mind in your account settings.</p> -->
+                </div>
+                <div class="modal-footer flex-nowrap p-0">
+                    <button type="button"
+                        class="btn btn-lg primary-bg text-white fs-6 text-decoration-none col-6 m-0 rounded-0 border-end"><strong>Yes,
+                            Out</strong></button>
+                    <button type="button" class="btn btn-lg btn-secondary fs-6 text-decoration-none col-6 m-0 rounded-0"
+                        data-bs-dismiss="modal">No thanks</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- <script>
+        const navBar = document.querySelector(".top-navbar")
+        allLi = document.querySelectorAll("tes-oi");
+
+        for (var i = 0; i < allLi.length; i++) {
+            allLi[i].addEventListener('click', function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active");
+                this.className += " active";
+
+            })
+        }
+
+    </script> -->
+
+    <!-- <script>
+        var btnContainer = document.getElementById("navbar");
+        var btns = btnContainer.getElementsByClassName("btn-mobile");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('click', function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active");
+                this.className += " active";
+            })
+        }
+    </script> -->
+
+    <!-- link ke js -->
+    <script src="assets/js/wrapper.js"></script>
+    <!-- <script src="assets/js/navApk.js"></script> -->
+    <!-- <script src="assets/js/navMobile.js"></script> -->
+
+    <script src="assets/js/activeNav.js"></script>
+
+</body>
+
+</html>

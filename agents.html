@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- link ke css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Agents</title>
+</head>
+
+<body>
+    <!-- sticky navbar bottom -->
+    <div class="container-nav-mobile text-center fixed-bottom d-block d-sm-block d-md-none">
+        <div class="navbar-mobile" id="navbar-mobile">
+            <li>
+                <a href="dashboard.html" class="">
+                    <i class="bi bi-speedometer fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="invoices.html" class="">
+                    <i class="bi bi-receipt fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Slip Index</div>
+                </a>
+            </li>
+            <li>
+                <a href="import.html" class="">
+                    <i class="bi bi-plus-circle-fill fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Report</div>
+                </a>
+            </li>
+            <li>
+                <a href="agents.html" class="">
+                    <i class="bi bi-person-fill fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Agents</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="" data-bs-toggle="modal" data-bs-target="#signout">
+                    <i class="bi bi-box-arrow-right fs-3" aria-hidden="true"></i>
+                    <div class="nav-title">Signout</div>
+                </a>
+            </li>
+        </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand top-navbar fixed-bottom d-block d-sm-block d-md-none">
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link"><i class="bi bi-speedometer2 fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="invoices.html" class="nav-link"><i class="bi bi-receipt fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="import.html" class="nav-link"><i class="bi bi-plus-circle fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="agents.html" class="nav-link"><i class="bi bi-person fs-3 text-white"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#signout"><i
+                        class="bi bi-box-arrow-right fs-3 text-white"></i></a>
+            </li>
+        </ul>
+    </nav> -->
+    <!-- navbar bottom -->
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="sidenav" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center">
+                <a href="dashboard.html" class="text-white fs-4 fw-bold text-uppercase ">
+                    Zipang</a>
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="dashboard.html" class="list-group-item list-group-item-action bg-transparent second-text"><i
+                        class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                <a href="invoices.html" class="list-group-item list-group-item-action bg-transparent second-text "><i
+                        class="bi bi-receipt me-2"></i>Invoices</a>
+                <a href="import.html" class="list-group-item list-group-item-action bg-transparent second-text "><i
+                        class="bi bi-plus-circle me-2"></i>Reports</a>
+                <a href="agents.html" class="list-group-item list-group-item-action bg-transparent second-text "><i
+                        class="bi bi-person-fill me-2"></i>Agents</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text "><i
+                        class="bi bi-box-arrow-right me-2"></i>Sign out</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg px-4 navbar-large">
+                <div class=" d-none d-md-block d-lg-block">
+                    <i class="bi bi-text-left fs-2 me-3 " id="menu-toggle"></i>
+                </div>
+                <div class=" d-none d-md-block d-lg-block">
+                    <a href="dashboard.html" class="fs-5 text-dark">Home</a>
+                </div>
+                <div class=" d-block d-sm-block d-md-none">
+                    <a href="dashboard.html" class="text-white fw-bold fs-2 text-uppercase">Zipang</a>
+                </div>
+
+                <button class="navbar-toggler collapsed ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon top-bar"></span>
+                    <span class="navbar-toggler-icon middle-bar"></span>
+                    <span class="navbar-toggler-icon bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-center" href="profile.html">
+                                <i class="bi bi-person-circle fs-5 me-2"></i>wahdania.prasetyo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4 mt-3 topdown-padding">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="my-2">Listing Agents</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-6 col-8 my-2">
+                            <div class="input-wrap input-1 input-shadow">
+                                <input type="text" placeholder="Search.." />
+                                <button>
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-bg my-2">
+
+                    <!-- search biasa -->
+                    <!-- <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 mb-2">
+                            <form class="d-flex">
+                                <input class="form-control form-control-sm" type=" search" placeholder="Search Here..."
+                                    aria-label="Search">
+                                <button class="btn btn-sm btn-secondary btn-cari ms-1" type="submit"><i
+                                        class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div> -->
+                    <div class="row my-2">
+                        <div class="col-12 table-responsive">
+                            <table class="table bg-white rounded shadow-sm table-hover">
+                                <thead class="">
+                                    <tr class=" text-white">
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col" colspan="3" class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Wahdaniya.prasetyo</td>
+                                        <td>wahdania.prasetyo@example.com</td>
+                                        <td class="text-center"><a href="profile.html"><i
+                                                    class="bi bi-eye-fill fs-5 text-dark"></i></a></td>
+                                        <td class="text-center"><a href="editUser.html"><i
+                                                    class="bi bi-pencil-square fs-5 text-dark"></i></a></td>
+                                        <td class="text-center"><a href="#"><i
+                                                    class="bi bi-trash-fill fs-5 text-dark"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>K.juliananta</td>
+                                        <td>k.juliananta@example.com</td>
+                                        <td class="text-center"><a href="profile.html"><i
+                                                    class="bi bi-eye-fill fs-5 text-dark"></i></a></td>
+                                        <td class="text-center"><a href="editUser.html"><i
+                                                    class="bi bi-pencil-square fs-5 text-dark"></i></a></td>
+                                        <td class="text-center"><a href="#"><i
+                                                    class="bi bi-trash-fill fs-5 text-dark"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>nur.fadilah</td>
+                                        <td>nur.fadilah@example.com</td>
+                                        <td class="text-center"><a href="profile.html"><i
+                                                    class="bi bi-eye-fill fs-5 text-dark"></i></a></td>
+                                        <td class="text-center"><a href="editUser.html"><i
+                                                    class="bi bi-pencil-square fs-5 text-dark"></i></a></td>
+                                        <td class="text-center"><a href="#"><i
+                                                    class="bi bi-trash-fill fs-5 text-dark"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- link ke js -->
+    <script src="assets/js/wrapper.js"></script>
+
+    <script src="assets/js/activeNav.js"></script>
+</body>
+
+</html>
